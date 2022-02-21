@@ -25,7 +25,7 @@ pipeline {
         stage('Clone repository') {               
            steps{
                 // checkout scm
-                git branch: 'master1', url: 'https://github.com/rajkumat01/samplejava2'
+                git branch: 'master1', url: 'https://github.com/rajkumat01/samplejava4'
            }
         }     
         stage('Validate Configurtion file'){
