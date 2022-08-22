@@ -48,7 +48,7 @@ pipeline {
                 }
             }
         }
-        /*
+        
         stage("SnapshotValidation and GetSnapshotsCreated"){
             steps{
                 echo "Triggering Get snapshots for applicationName:${appName},deployableName:${deployName},changeSetId:${changeSetId}"
@@ -63,7 +63,7 @@ pipeline {
                             }else{
                                 echo "Snapshot failed to get validated : ${it.name}" ;
                                 assert it.validation == "passed"
-                            }/*
+                            } */
                             echo "validation passed for snapshot : ${it.name}"
                             snapshotName = it.name 
                         }
@@ -83,7 +83,7 @@ pipeline {
                 }
             }
         }
-        */
+        
         stage('Deploy to the System'){
             steps{
                 echo "Devops Change trigger change request"
